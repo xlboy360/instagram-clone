@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 import Post from "./components/Post";
 import ImageUpload from "./components/ImageUpload";
-import InstagramLogo from "./static/Instagram-Logo.png";
+import QuetzalLogo from "./static/Logo_Quetzal-LG.png";
 
 import Modal from "@material-ui/core/Modal";
 import { makeStyles } from "@material-ui/core/styles";
@@ -116,7 +116,7 @@ function App() {
       >
         <div style={modalStyle} className={classes.paper}>
           <form className="app__signup">
-            <img className="app__headerImage" src={InstagramLogo} alt="" />
+            <img className="app__headerImage" src={QuetzalLogo} alt="" />
             <Input
               className="app__input"
               placeholder="username"
@@ -152,7 +152,7 @@ function App() {
       >
         <div style={modalStyle} className={classes.paper}>
           <form className="app__signup">
-            <img className="app__headerImage" src={InstagramLogo} alt="" />
+            <img className="app__headerImage" src={QuetzalLogo} alt="" />
             <Input
               className="app__input"
               placeholder="email"
@@ -175,7 +175,7 @@ function App() {
       </Modal>
       {/* Header */}
       <div className="app__header">
-        <img className="app__headerImage" src={InstagramLogo} alt="Instagram" />
+        <img className="app__headerImage" src={QuetzalLogo} alt="Instagram" />
         {user ? (
           <div className="app__loginContainer">
             <Button type="submit" onClick={() => auth.signOut()}>
